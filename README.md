@@ -22,6 +22,8 @@
 
 - Install mongosh: https://www.mongodb.com/try/download/shell
 - Navigate to `<PATH>\mongosh-2.1.4-win32-x64\mongosh-2.1.4-win32-x64\bin>`
-- Run `mongosh "mongodb://localhost:<MONGO_TOKEN>@localhost:10255/admin?ssl=true&retryWrites=false" --tlsAllowInvalidCertificates`
+- Run `mongosh "<MONGO_CONNECTION_STRING>&retryWrites=false" --tlsAllowInvalidCertificates`
+
+  - Example: `mongosh "mongodb://localhost:C2y6yDjf5%2FR%2Bob0N8A7Cgv30VRDJIWEHLM%2B4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw%2FJw%3D%3D@localhost:10255/admin?ssl=true&retryWrites=false" --tlsAllowInvalidCertificates`
 
 - Try to add some things to the database. See https://www.w3schools.com/mongodb/mongodb_mongosh_create_database.php
