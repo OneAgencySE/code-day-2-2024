@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  cosmos-db:
+    hostname: cosmos-db
+    domainname: local
+    image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:mongodb
+    container_name: cosmos-db
+    ports:
+      - "8081:8081"
+      - "10251-10255:10251-10255"
+    environment:
+      - AZURE_COSMOS_EMULATOR_ENABLE_MONGODB_ENDPOINT=4.0
+    tty: true
+    stdin_open: true
+
+networks:
+  default:
+    name: docker_network
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.host_binding_ipv4: 0.0.0.0
+      com.docker.network.driver.mtu: 1500
