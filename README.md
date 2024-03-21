@@ -9,7 +9,7 @@
 
   - ⚙️ → Resources → WSL integration → Enable integration with my default WSL distro
 
-- Put the docker-compose.yml file in WSL. I have cloned this repository to the following location: `\\wsl.localhost\Ubuntu\home\code-day-2-2024`.
+- Put the docker-compose.yml file found in this repo in WSL. I have cloned this repository to the following location: `\\wsl.localhost\Ubuntu\home\code-day-2-2024`.
 
 ## Let's go!
 
